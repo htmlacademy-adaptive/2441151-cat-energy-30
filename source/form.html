@@ -15,8 +15,8 @@
   <!-- Header starts -->
   <header class="main-header">
     <a class="main-header__logo logo logo--with-image" href="#">
-      <img class="logo__image-icon" width="33" height="38" src="#" alt="Логотип">
-      <img class="logo__image-text" width="101" height="18" src="#" alt="Кэт энерджи">
+      <img class="logo__image-icon" width="33" height="38" src="#" alt="Логотип - На главную">
+      <img class="logo__image-text" width="101" height="18" src="#" alt="Кэт энерджи - На главную" aria-disabled="true">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button-toggle" type="button" aria-label="Открыть меню">
@@ -27,13 +27,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html" aria-current="page">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--current" href="form.html" aria-current="page">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -41,6 +41,89 @@
   </header>
   <!-- Header ends -->
   <main class="main">
+    <section class="form">
+      <div class="form__container">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__note">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="form__section" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__fieldset form__fieldset--cat-data">
+            <h2 class="visually-hidden">Данные кота</h2>
+            <label class="form__item-label" for="name">Имя:*</label>
+            <input type="text" name="name" id="name" placeholder="Барсик" required>
+            <label class="form__item-label" for="weight">Вес (кг):*</label>
+            <input type="number" name="weight" id="weight" placeholder="7" step="0.1" required>
+            <label class="form__item-label" for="age">Возраст (лет):</label>
+            <input type="number" name="age" id="age" placeholder="7">
+          </div>
+          <div class="form__fieldset form__fieldset--program-select">
+            <h2 class="visually-hidden">Выбор программы</h2>
+            <input type="radio" name="selected-program" id="weight-loss" value="weight-loss" checked>
+            <label class="form__item-label" for="weight-loss">Похудение</label>
+            <input type="radio" name="selected-program" id="weight-gain" value="weight-gain">
+            <label class="form__item-label" for="weight-gain">Набор массы</label>
+            <input type="radio" name="selected-program" id="need-advice" value="need-advice">
+            <label class="form__item-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
+          </div>
+          <div class="form__fieldset form__fieldset--owner-contacts">
+            <h2 class="form__fieldset-title">Контактные данные (владельца кота)</h2>
+            <div class="form__email-field email-field">
+              <label class="email-field__label" for="email">E-mail:*</label>
+              <input name="email" id="email" type="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="email-field__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 20 20" fill="none">
+                <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z"
+                  stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="form__phone-field phone-field">
+              <label class="phone-field__label" for="phone">Телефон:*</label>
+              <input name="phone" id="phone" type="tel" placeholder="8 (960) 900-60-90" required>
+              <svg class="phone-field__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z"
+                  stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+          <div class="form__fieldset form__fieldset--comment">
+            <h2 class="form__fieldset-title">Комментарий</h2>
+            <label class="visually-hidden" for="comment">
+            </label>
+            <textarea name="comment" id="comment" cols="30" rows="10"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+          <div class="form__fieldset form__fieldset--optional">
+            <h2 class="form__fieldset-title">Дополнительно</h2>
+            <input name="options" id="sugar-substitute" value="sugar-substitute" type="checkbox" checked>
+            <label class="form__item-label" for="sugar-substitute">Сахарозаменитель</label>
+            <input name="options" id="water" value="water" type="checkbox">
+            <label class="form__item-label" for="water">Питьевая вода</label>
+            <input name="options" id="milk" value="milk" type="checkbox">
+            <label class="form__item-label" for="milk">Молоко</label>
+            <input name="options" id="vitamins" value="vitamins" type="checkbox">
+            <label class="form__item-label" for="vitamins">Витамины</label>
+            <div class="form__submit-wrapper">
+              <button class="form__submit-button button button--primary" type="submit">Отправить заявку</button>
+              <span class="form__submit-note">* — Обязательные поля</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="conctacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <div class="conctacts__address">
+          <p class="conctacts__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="conctacts__city">Санкт-Петербург</p>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <img class="conctacts__map-image" width="320" height="362" src="#" alt="Карта с указанным адресом">
+      </div>
+    </section>
 
   </main>
   <!-- Footer starts -->
