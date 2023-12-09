@@ -12,10 +12,11 @@
 </head>
 
 <body class="page__body">
+  <!-- Header starts -->
   <header class="main-header">
     <a class="main-header__logo logo logo--with-image" href="#">
-      <img class="logo__image-icon" width="33" height="38" src="#" alt="Логотип">
-      <img class="logo__image-text" width="101" height="18" src="#" alt="Кэт энерджи">
+      <img class="logo__image-icon" width="33" height="38" src="#" alt="Логотип - На главную">
+      <img class="logo__image-text" width="101" height="18" src="#" alt="Кэт энерджи - На главную" aria-disabled="true">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button-toggle" type="button" aria-label="Открыть меню">
@@ -38,7 +39,7 @@
       </div>
     </nav>
   </header>
-
+  <!-- Header ends -->
   <main class="main">
     <section class="hero">
       <h1 class="hero__title">Функциональное питание для котов</h1>
@@ -115,16 +116,18 @@
         </button>
       </div>
     </section>
-
+    <!-- Contacts -->
     <section class="contacts">
-      <div class="contacts__container">
+      <div class="contacts__wrapper">
         <h2 class="conctacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <div class="conctacts__address">
           <p class="conctacts__street">ул. Большая Конюшенная, д. 19/8</p>
           <p class="conctacts__city">Санкт-Петербург</p>
         </div>
       </div>
-      <img class="conctacts__map" width="320" height="362" src="#" alt="Карта с указанным адресом">
+      <div class="contacts__map">
+        <img class="conctacts__map-image" width="320" height="362" src="#" alt="Карта с указанным адресом">
+      </div>
     </section>
   </main>
   <!-- Footer starts -->
