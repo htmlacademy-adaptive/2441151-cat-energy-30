@@ -193,7 +193,7 @@ export function buildProd (done) {
       processStyles,
       processScripts,
       createStack,
-      copyAssets,
+      // copyAssets,
     ),
   )(done);
 }
