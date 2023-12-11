@@ -19,8 +19,19 @@
   <!-- Header starts -->
   <header class="main-header">
     <a class="main-header__logo logo logo--with-image" href="index.html">
-      <img class="logo__image-pic" width="33" height="38" src="#" alt="Логотип - На главную">
-      <img class="logo__image-text" width="101" height="18" src="#" alt="Кэт энерджи - На главную" aria-disabled="true">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59"
+          srcset="images/header-logo-pic-desktop.svg">
+        <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50"
+          srcset="images/header-logo-pic-tablet.svg">
+        <img class="logo__image-pic" width="33" height="38" src="images/header-logo-pic.svg" alt="Логотип - На главную">
+      </picture>
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21"
+          srcset="images/header-logo-text.svg">
+        <img class="logo__image-text" width="101" height="18" src="images/header-logo-text.svg"
+          alt="Кэт энерджи - На главную" aria-disabled="true">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button-toggle" type="button" aria-label="Открыть меню">
@@ -50,9 +61,16 @@
       <div class="catalog-main__container">
         <h1 class="catalog-main__title">Каталог продукции</h1>
         <ul class="catalog-main__products-list">
+          <!-- Card 1 -->
           <li class="catalog-main__product-card product-card">
             <div class="product-card__img-container">
-              <img class="product-card__img" src="#" width="68" height="86" alt="Изображение продукта">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/catalog-1-tablet@1x.png 1x, images/catalog-1-tablet@2x.png 2x" width="161"
+                  height="172">
+                <img class="product-card__img" alt="Изображение продукта" src="images/catalog-1@1x.png"
+                  srcset="images/catalog-1@2x.png 2x" width="68" height="86">
+              </picture>
             </div>
             <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
             <dl class="product-card__properties-list">
@@ -71,9 +89,16 @@
             </dl>
             <button class="product-card__order-button button button--wide" type="button">Заказать</button>
           </li>
+          <!-- Card 2 -->
           <li class="catalog-main__product-card product-card">
             <div class="product-card__img-container">
-              <img class="product-card__img" src="#" width="84" height="100" alt="Изображение продукта">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/catalog-2-tablet@1x.png 1x, images/catalog-2-tablet@2x.png 2x" width="168"
+                  height="206">
+                <img class="product-card__img" alt="Изображение продукта" src="images/catalog-2@1x.png"
+                  srcset="images/catalog-2@2x.png 2x" width="84" height="100">
+              </picture>
             </div>
             <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
             <dl class="product-card__properties-list">
@@ -92,9 +117,16 @@
             </dl>
             <button class="product-card__order-button button button--wide" type="button">Заказать</button>
           </li>
+          <!-- Card 3 -->
           <li class="catalog-main__product-card product-card">
             <div class="product-card__img-container">
-              <img class="product-card__img" src="#" width="68" height="86" alt="Изображение продукта">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/catalog-3-tablet@1x.png 1x, images/catalog-3-tablet@2x.png 2x" width="163"
+                  height="174">
+                <img class="product-card__img" alt="Изображение продукта" src="images/catalog-3@1x.png"
+                  srcset="images/catalog-3@2x.png 2x" width="68" height="78">
+              </picture>
             </div>
             <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
             <dl class="product-card__properties-list">
@@ -113,9 +145,16 @@
             </dl>
             <button class="product-card__order-button button button--wide" type="button">Заказать</button>
           </li>
+          <!-- Card 4 -->
           <li class="catalog-main__product-card product-card">
             <div class="product-card__img-container">
-              <img class="product-card__img" src="#" width="84" height="100" alt="Изображение продукта">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/catalog-4-tablet@1x.png 1x, images/catalog-4-tablet@2x.png 2x" width="168"
+                  height="200">
+                <img class="product-card__img" alt="Изображение продукта" src="images/catalog-4@1x.png"
+                  srcset="images/catalog-4@2x.png 2x" width="84" height="100">
+              </picture>
             </div>
             <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
             <dl class="product-card__properties-list">
@@ -134,9 +173,16 @@
             </dl>
             <button class="product-card__order-button button button--wide" type="button">Заказать</button>
           </li>
+          <!-- Card 5 -->
           <li class="catalog-main__product-card product-card">
             <div class="product-card__img-container">
-              <img class="product-card__img" src="#" width="68" height="86" alt="Изображение продукта">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/catalog-5-tablet@1x.png 1x, images/catalog-5-tablet@2x.png 2x" width="161"
+                  height="171">
+                <img class="product-card__img" alt="Изображение продукта" src="images/catalog-5@1x.png"
+                  srcset="images/catalog-5@2x.png 2x" width="68" height="87">
+              </picture>
             </div>
             <h2 class="product-card__title">Cat Energy SLIM 500 г</h2>
             <dl class="product-card__properties-list">
@@ -155,9 +201,16 @@
             </dl>
             <button class="product-card__order-button button button--wide" type="button">Заказать</button>
           </li>
+          <!-- Card 6 -->
           <li class="catalog-main__product-card product-card">
             <div class="product-card__img-container">
-              <img class="product-card__img" src="#" width="84" height="100" alt="Изображение продукта">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/catalog-6-tablet@1x.png 1x, images/catalog-6-tablet@2x.png 2x" width="168"
+                  height="200">
+                <img class="product-card__img" alt="Изображение продукта" src="images/catalog-6@1x.png"
+                  srcset="images/catalog-6@2x.png 2x" width="84" height="100">
+              </picture>
             </div>
             <h2 class="product-card__title">Cat Energy SLIM 1000 г</h2>
             <dl class="product-card__properties-list">
@@ -176,9 +229,16 @@
             </dl>
             <button class="product-card__order-button button button--wide" type="button">Заказать</button>
           </li>
+          <!-- Card 7 -->
           <li class="catalog-main__product-card product-card">
             <div class="product-card__img-container">
-              <img class="product-card__img" src="#" width="68" height="86" alt="Изображение продукта">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/catalog-7-tablet@1x.png 1x, images/catalog-7-tablet@2x.png 2x" width="163"
+                  height="174">
+                <img class="product-card__img" alt="Изображение продукта" src="images/catalog-7@1x.png"
+                  srcset="images/catalog-7@2x.png 2x" width="72" height="84">
+              </picture>
             </div>
             <h2 class="product-card__title">Cat Energy SLIM 500 г</h2>
             <dl class="product-card__properties-list">
@@ -246,7 +306,7 @@
         </ul>
         <section class="catalog-additional__special-offer special-offer">
           <h2 class="visually-hidden">Специальное предложение</h2>
-          <img class="special-offer__icon" src="#" alt="Иконка подарка" width="80" height="82" aria-disabled="true">
+          <!-- <img class="special-offer__icon" src="#" alt="Иконка подарка" width="80" height="82" aria-disabled="true"> -->
           <p class="special-offer__text">Закажите все и получите чехол для кота в подарок!</p>
         </section>
       </div>
@@ -261,7 +321,14 @@
         </div>
       </div>
       <div class="contacts__map">
-        <img class="contacts__map-image" width="320" height="362" src="#" alt="Карта с указанным адресом">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)"
+            srcset="images/map-img-desktop@1x.png 1x, images/map-img-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)"
+            srcset="images/map-img-tablet@1x.png 1x, images/map-img-tablet@2x.png 2x" width="768" height="400">
+          <img class="contacts__map-image" alt="Карта с указанным адресом" src="images/map-img@1x.png"
+            srcset="images/map-img@2x.png 2x" width="320" height="362">
+        </picture>
       </div>
     </section>
 
@@ -269,7 +336,7 @@
   <!-- Footer starts -->
   <footer class="main-footer">
     <a class="main-footer__logo" href="index.html">
-      <img class="main-footer__logo-image" width="128" height="24" src="#" alt="Логотип 'Кэт энерджи'">
+      <img class="main-footer__logo-image" width="128" height="24" src="images/footer-logo-text.svg" alt="Кэт энерджи">
     </a>
     <!-- Socials -->
     <section class="main-footer__socials socials">
