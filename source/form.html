@@ -8,6 +8,10 @@
   <title>Каталог - Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -15,8 +19,19 @@
   <!-- Header starts -->
   <header class="main-header">
     <a class="main-header__logo logo logo--with-image" href="index.html">
-      <img class="logo__image-icon" width="33" height="38" src="#" alt="Логотип - На главную">
-      <img class="logo__image-text" width="101" height="18" src="#" alt="Кэт энерджи - На главную" aria-disabled="true">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59"
+          srcset="images/header-logo-pic-desktop.svg">
+        <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50"
+          srcset="images/header-logo-pic-tablet.svg">
+        <img class="logo__image-pic" width="33" height="38" src="images/header-logo-pic.svg" alt="Логотип - На главную">
+      </picture>
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21"
+          srcset="images/header-logo-text.svg">
+        <img class="logo__image-text" width="101" height="18" src="images/header-logo-text.svg"
+          alt="Кэт энерджи - На главную" aria-disabled="true">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button-toggle" type="button" aria-label="Открыть меню">
@@ -121,7 +136,14 @@
         </div>
       </div>
       <div class="contacts__map">
-        <img class="contacts__map-image" width="320" height="362" src="#" alt="Карта с указанным адресом">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)"
+            srcset="images/map-img-desktop@1x.png 1x, images/map-img-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)"
+            srcset="images/map-img-tablet@1x.png 1x, images/map-img-tablet@2x.png 2x" width="768" height="400">
+          <img class="contacts__map-image" alt="Карта с указанным адресом" src="images/map-img@1x.png"
+            srcset="images/map-img@2x.png 2x" width="320" height="362">
+        </picture>
       </div>
     </section>
 
@@ -129,7 +151,7 @@
   <!-- Footer starts -->
   <footer class="main-footer">
     <a class="main-footer__logo" href="index.html">
-      <img class="main-footer__logo-image" width="128" height="24" src="#" alt="Логотип 'Кэт энерджи'">
+      <img class="main-footer__logo-image" width="128" height="24" src="images/footer-logo-text.svg" alt="Кэт энерджи">
     </a>
     <!-- Socials -->
     <section class="main-footer__socials socials">
