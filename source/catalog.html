@@ -3,6 +3,8 @@
 
 <!-- После header и каждой section нужен containter. -->
 
+
+
 <head>
   <meta charset="UTF-8">
   <title>Каталог - Кэт энерджи</title>
@@ -26,20 +28,16 @@
           srcset="images/header-logo-pic-tablet.svg">
         <img class="logo__image-pic" width="33" height="38" src="images/header-logo-pic.svg" alt="Логотип - На главную">
       </picture>
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21"
-          srcset="images/header-logo-text.svg">
-        <img class="logo__image-text" width="101" height="18" src="images/header-logo-text.svg"
-          alt="Кэт энерджи - На главную" aria-disabled="true">
-      </picture>
+      <img class="logo__image-text" width="101" height="18" src="images/header-logo-text.svg"
+        alt="Кэт энерджи - На главную" aria-disabled="true">
     </a>
-    <nav class="main-nav">
+    <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle button-toggle" type="button" aria-label="Открыть меню">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -313,7 +311,7 @@
     </section>
     <!-- Contacts -->
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__container">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <div class="contacts__address">
           <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
@@ -321,14 +319,14 @@
         </div>
       </div>
       <div class="contacts__map">
-        <picture>
+        <!-- <picture>
           <source type="image/png" media="(min-width: 1440px)"
             srcset="images/map-img-desktop@1x.png 1x, images/map-img-desktop@2x.png 2x" width="1440" height="400">
           <source type="image/png" media="(min-width: 768px)"
             srcset="images/map-img-tablet@1x.png 1x, images/map-img-tablet@2x.png 2x" width="768" height="400">
           <img class="contacts__map-image" alt="Карта с указанным адресом" src="images/map-img@1x.png"
             srcset="images/map-img@2x.png 2x" width="320" height="362">
-        </picture>
+        </picture> -->
       </div>
     </section>
 
@@ -379,7 +377,8 @@
       </ul>
     </section>
     <!-- Developer -->
-    <a class="developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
+    <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+      rel="noreferrer noopener">
       <span class="developer__name">HTML Academy</span>
       <svg class="developer__logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35"
         fill="none">
