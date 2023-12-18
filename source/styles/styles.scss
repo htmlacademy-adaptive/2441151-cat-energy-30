@@ -2,6 +2,28 @@
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/visually_hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/button.scss";
+@import "./blocks/button-toggle.scss";
+@import "./blocks/catalog-additional.scss";
+@import "./blocks/catalog-main.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/developer.scss";
+@import "./blocks/email-field.scss";
+@import "./blocks/example.scss";
+@import "./blocks/form.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main.scss";
+@import "./blocks/phone-field.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/product-description.scss";
+@import "./blocks/product-lines.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/special-offer.scss";
