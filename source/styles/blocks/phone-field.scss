@@ -1,0 +1,17 @@
+.phone-field {
+  color: $grey-text;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  /* 112.5% */
+  text-transform: uppercase;
+}
+
+// .phone-field__label {}
+
+.phone-field__input {
+  text-transform: inherit;
+}
+
+// .phone-field__icon {}

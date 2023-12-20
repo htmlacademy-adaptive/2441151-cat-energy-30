@@ -2,6 +2,8 @@
 <html class="page" lang="ru">
 
 <!-- После header и каждой section нужен containter. -->
+<!-- Разбить форму на блоки? Даже если я их не использую больше нигде? -->
+
 
 <head>
   <meta charset="UTF-8">
@@ -26,20 +28,16 @@
           srcset="images/header-logo-pic-tablet.svg">
         <img class="logo__image-pic" width="33" height="38" src="images/header-logo-pic.svg" alt="Логотип - На главную">
       </picture>
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21"
-          srcset="images/header-logo-text.svg">
-        <img class="logo__image-text" width="101" height="18" src="images/header-logo-text.svg"
-          alt="Кэт энерджи - На главную" aria-disabled="true">
-      </picture>
+      <img class="logo__image-text" width="101" height="18" src="images/header-logo-text.svg"
+        alt="Кэт энерджи - На главную" aria-disabled="true">
     </a>
-    <nav class="main-nav">
+    <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle button-toggle" type="button" aria-label="Открыть меню">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -61,29 +59,29 @@
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__note">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="form__section" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__fieldset form__fieldset--cat-data">
+          <div class="form__fieldset form__fieldset-cat-data">
             <h2 class="visually-hidden">Данные кота</h2>
             <label class="form__item-label" for="name">Имя:*</label>
-            <input type="text" name="name" id="name" placeholder="Барсик" required>
+            <input class="form__item-input" type="text" name="name" id="name" placeholder="Барсик" required>
             <label class="form__item-label" for="weight">Вес (кг):*</label>
-            <input type="number" name="weight" id="weight" placeholder="7" step="0.1" required>
+            <input class="form__item-input" type="number" name="weight" id="weight" placeholder="7" step="0.1" required>
             <label class="form__item-label" for="age">Возраст (лет):</label>
-            <input type="number" name="age" id="age" placeholder="7">
+            <input class="form__item-input" type="number" name="age" id="age" placeholder="7">
           </div>
-          <div class="form__fieldset form__fieldset--program-select">
+          <div class="form__fieldset form__fieldset-program-select">
             <h2 class="visually-hidden">Выбор программы</h2>
-            <input type="radio" name="selected-program" id="weight-loss" value="weight-loss" checked>
+            <input class="form__item-input" type="radio" name="selected-program" id="weight-loss" value="weight-loss" checked>
             <label class="form__item-label" for="weight-loss">Похудение</label>
-            <input type="radio" name="selected-program" id="weight-gain" value="weight-gain">
+            <input class="form__item-input" type="radio" name="selected-program" id="weight-gain" value="weight-gain">
             <label class="form__item-label" for="weight-gain">Набор массы</label>
-            <input type="radio" name="selected-program" id="need-advice" value="need-advice">
+            <input class="form__item-input" type="radio" name="selected-program" id="need-advice" value="need-advice">
             <label class="form__item-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
           </div>
-          <div class="form__fieldset form__fieldset--owner-contacts">
+          <div class="form__fieldset form__fieldset-owner-contacts">
             <h2 class="form__fieldset-title">Контактные данные (владельца кота)</h2>
             <div class="form__email-field email-field">
               <label class="email-field__label" for="email">E-mail:*</label>
-              <input name="email" id="email" type="email" placeholder="kuklachev@gmail.com" required>
+              <input class="email-field__input" name="email" id="email" type="email" placeholder="kuklachev@gmail.com" required>
               <svg class="email-field__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                 viewBox="0 0 20 20" fill="none">
                 <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z"
@@ -92,7 +90,7 @@
             </div>
             <div class="form__phone-field phone-field">
               <label class="phone-field__label" for="phone">Телефон:*</label>
-              <input name="phone" id="phone" type="tel" placeholder="8 (960) 900-60-90" required>
+              <input class="phone-field__input" name="phone" id="phone" type="tel" placeholder="8 (960) 900-60-90" required>
               <svg class="phone-field__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                 viewBox="0 0 20 20" fill="none">
                 <path
@@ -101,24 +99,24 @@
               </svg>
             </div>
           </div>
-          <div class="form__fieldset form__fieldset--comment">
+          <div class="form__fieldset form__fieldset-comment">
             <h2 class="form__fieldset-title">Комментарий</h2>
             <label class="visually-hidden" for="comment">
             </label>
-            <textarea name="comment" id="comment" cols="30" rows="10"
+            <textarea class="form__comment-textarea" name="comment" id="comment" cols="30" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
-          <div class="form__fieldset form__fieldset--optional">
+          <div class="form__fieldset form__fieldset-optional">
             <h2 class="form__fieldset-title">Дополнительно</h2>
-            <input name="options" id="sugar-substitute" value="sugar-substitute" type="checkbox" checked>
+            <input class="form__item-input" type="checkbox" name="options" id="sugar-substitute" value="sugar-substitute" checked>
             <label class="form__item-label" for="sugar-substitute">Сахарозаменитель</label>
-            <input name="options" id="water" value="water" type="checkbox">
+            <input class="form__item-input" type="checkbox" name="options" id="water" value="water">
             <label class="form__item-label" for="water">Питьевая вода</label>
-            <input name="options" id="milk" value="milk" type="checkbox">
+            <input class="form__item-input" type="checkbox" name="options" id="milk" value="milk">
             <label class="form__item-label" for="milk">Молоко</label>
-            <input name="options" id="vitamins" value="vitamins" type="checkbox">
+            <input class="form__item-input" type="checkbox" name="options" id="vitamins" value="vitamins">
             <label class="form__item-label" for="vitamins">Витамины</label>
-            <div class="form__submit-wrapper">
+            <div class="form__submit-container">
               <button class="form__submit-button button" type="submit">Отправить заявку</button>
               <span class="form__submit-note">* — Обязательные поля</span>
             </div>
@@ -128,7 +126,7 @@
     </section>
     <!-- Contacts -->
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__container">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <div class="contacts__address">
           <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
@@ -136,14 +134,14 @@
         </div>
       </div>
       <div class="contacts__map">
-        <picture>
+        <!-- <picture>
           <source type="image/png" media="(min-width: 1440px)"
             srcset="images/map-img-desktop@1x.png 1x, images/map-img-desktop@2x.png 2x" width="1440" height="400">
           <source type="image/png" media="(min-width: 768px)"
             srcset="images/map-img-tablet@1x.png 1x, images/map-img-tablet@2x.png 2x" width="768" height="400">
           <img class="contacts__map-image" alt="Карта с указанным адресом" src="images/map-img@1x.png"
             srcset="images/map-img@2x.png 2x" width="320" height="362">
-        </picture>
+        </picture> -->
       </div>
     </section>
 
@@ -194,7 +192,8 @@
       </ul>
     </section>
     <!-- Developer -->
-    <a class="developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
+    <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+      rel="noreferrer noopener">
       <span class="developer__name">HTML Academy</span>
       <svg class="developer__logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35"
         fill="none">

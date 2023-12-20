@@ -1,0 +1,26 @@
+// .contacts {}
+
+// .contacts__container {}
+
+.contacts__title {
+  color: $black-lighter;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  /* 125% */
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+}
+
+// .contacts__street {}
+
+// .contacts__city {}
+
+// .contacts__map {}
+
+// .contacts__map-image {}

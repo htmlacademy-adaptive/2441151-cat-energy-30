@@ -1,0 +1,17 @@
+.email-field {
+  color: $grey-text;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  /* 112.5% */
+  text-transform: uppercase;
+}
+
+// .email-field__label {}
+
+.email-field__input {
+  text-transform: inherit;
+}
+
+// .email-field__icon {}
