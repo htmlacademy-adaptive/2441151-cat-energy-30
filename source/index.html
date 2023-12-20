@@ -55,17 +55,19 @@
   <!-- Header ends -->
   <main class="main">
     <section class="hero">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
-      <p class="hero__lead">Занялся собой? Займись котом!</p>
-      <picture>
-        <source type="image/png" media="(min-width: 1440px)"
-          srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" width="552" height="499">
-        <source type="image/png" media="(min-width: 768px)"
-          srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x" width="709" height="609">
-        <img class="hero__product-image" alt="Питание для котов Cat Energy Pro 'Курица'" src="images/index-can@1x.png"
-          srcset="images/index-can@2x.png 2x" width="280" height="270">
-      </picture>
-      <a class="hero__button button" href="#">Подобрать программу</a>
+      <div class="hero__container">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <p class="hero__lead">Занялся собой? Займись котом!</p>
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)"
+            srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" width="552" height="499">
+          <source type="image/png" media="(min-width: 768px)"
+            srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x" width="709" height="609">
+          <img class="hero__product-image" alt="Питание для котов Cat Energy Pro 'Курица'" src="images/index-can@1x.png"
+            srcset="images/index-can@2x.png 2x" width="280" height="270">
+        </picture>
+        <a class="hero__button button" href="#">Подобрать программу</a>
+      </div>
     </section>
 
     <section class="product-lines">
@@ -91,13 +93,13 @@
       <ol class="product-description__list">
         <!-- Вопрос:
         Лучше убрать модификаторы и использовать селектор с :nth-child(x)? -->
-        <li class="product-description__item product-description__item--nutrients">Функциональное питание содержит
+        <li class="product-description__item product-description__item-nutrients">Функциональное питание содержит
           только полезные питательные вещества.</li>
-        <li class="product-description__item product-description__item--preparation">Выпускается в виде порошка, который
+        <li class="product-description__item product-description__item-preparation">Выпускается в виде порошка, который
           нужно лишь залить кипятком и готово.</li>
-        <li class="product-description__item product-description__item--regimen">Замените один-два приема обычной еды на
+        <li class="product-description__item product-description__item-regimen">Замените один-два приема обычной еды на
           наше функциональное питание.</li>
-        <li class="product-description__item product-description__item--results">Уже через месяц наслаждайтесь
+        <li class="product-description__item product-description__item-results">Уже через месяц наслаждайтесь
           изменениями к лучшему вашего питомца!</li>
       </ol>
     </section>

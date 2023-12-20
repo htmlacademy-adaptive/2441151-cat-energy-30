@@ -1,39 +1,92 @@
-.form {}
+// .form {}
 
-.form__container {}
+// .form__container {}
 
-.form__title {}
+.form__title {
+  color: $black;
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  /* 100% */
+}
 
-.form__note {}
+.form__note {
+  color: $black;
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  text-transform: uppercase;
+}
 
-.form__section {}
+// .form__section {}
 
-.form__fieldset {}
+// .form__fieldset {}
 
-.form__fieldset-title {}
+.form__fieldset-title {
+  color: $black;
+  font-family: $secondary-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  /* 108.333% */
+}
 
-.form__fieldset-cat-data {}
+// .form__fieldset-cat-data {}
 
-.form__fieldset-program-select {}
+// .form__fieldset-program-select {}
 
-.form__fieldset-owner-contacts {}
+// .form__fieldset-owner-contacts {}
 
-.form__fieldset-comment {}
+// .form__fieldset-comment {}
 
-.form__fieldset-optional {}
+// .form__fieldset-optional {}
 
-.form__item-label {}
+.form__item-label {
+  color: $grey-text;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  /* 112.5% */
+  text-transform: uppercase;
+}
 
-.form__item-input {}
+.form__item-input {
+  color: $grey-text;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  /* 112.5% */
+  text-transform: uppercase;
+}
 
-.form__email-field {}
+// .form__email-field {}
 
-.form__phone-field {}
+// .form__phone-field {}
 
-.form__comment-textarea {}
+.form__comment-textarea {
+  color: $grey-text;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  /* 112.5% */
+  text-transform: uppercase;
+}
 
-.form__submit-container {}
+// .form__submit-container {}
 
-.form__submit-button {}
+// .form__submit-button {}
 
-.form__submit-note {}
+.form__submit-note {
+  color: $black;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  /* 114.286% */
+}
