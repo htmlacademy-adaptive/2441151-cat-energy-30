@@ -89,63 +89,70 @@
     </section>
 
     <section class="product-description">
-      <h2 class="product-description__title">Как это работает</h2>
-      <ol class="product-description__list">
-        <!-- Вопрос:
+      <div class="product-description__container">
+        <h2 class="product-description__title">Как это работает</h2>
+        <ol class="product-description__list">
+          <!-- Вопрос:
         Лучше убрать модификаторы и использовать селектор с :nth-child(x)? -->
-        <li class="product-description__item product-description__item-nutrients">Функциональное питание содержит
-          только полезные питательные вещества.</li>
-        <li class="product-description__item product-description__item-preparation">Выпускается в виде порошка, который
-          нужно лишь залить кипятком и готово.</li>
-        <li class="product-description__item product-description__item-regimen">Замените один-два приема обычной еды на
-          наше функциональное питание.</li>
-        <li class="product-description__item product-description__item-results">Уже через месяц наслаждайтесь
-          изменениями к лучшему вашего питомца!</li>
-      </ol>
+          <li class="product-description__item product-description__item-nutrients">Функциональное питание содержит
+            только полезные питательные вещества.</li>
+          <li class="product-description__item product-description__item-preparation">Выпускается в виде порошка,
+            который
+            нужно лишь залить кипятком и готово.</li>
+          <li class="product-description__item product-description__item-regimen">Замените один-два приема обычной еды
+            на
+            наше функциональное питание.</li>
+          <li class="product-description__item product-description__item-results">Уже через месяц наслаждайтесь
+            изменениями к лучшему вашего питомца!</li>
+        </ol>
+      </div>
     </section>
 
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в день.</p>
-      <dl class="example__data-list">
-        <div class="example__data-item">
-          <dt class="example__data-value">5 кг</dt>
-          <dd class="example__data-details">Снижение веса</dd>
+      <div class="example__container">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__lead">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+          часов
+          в день.</p>
+        <dl class="example__data-list">
+          <div class="example__data-item">
+            <dt class="example__data-value">5 кг</dt>
+            <dd class="example__data-details">Снижение веса</dd>
+          </div>
+          <div class="example__data-item">
+            <dt class="example__data-value">60 дней</dt>
+            <dd class="example__data-details">Затрачено времени</dd>
+          </div>
+        </dl>
+        <div class="example__expenses">
+          <span>Затраты на питание:</span>
+          <span>15 000 руб.</span>
         </div>
-        <div class="example__data-item">
-          <dt class="example__data-value">60 дней</dt>
-          <dd class="example__data-details">Затрачено времени</dd>
+        <div class="example__slider">
+          <picture>
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
+            <img class="example__slider-img-before" alt="Кот Борис - до" src="images/cat-before@1x.png"
+              srcset="images/cat-before@2x.png 2x" width="280" height="256">
+          </picture>
+          <picture>
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
+            <img class="example__slider-img-after" alt="Кот Борис - после" src="images/cat-after@1x.png"
+              srcset="images/cat-after@2x.png 2x" width="280" height="256">
+          </picture>
+          <button class="example__slider-thumb" type="button">
+            <span class="visually-hidden">Ручка слайдера</span>
+            <svg class="example__slider-thumb-svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 40 40" fill="none">
+              <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
+              <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
+              <path d="M16 11L8 20L16 29V11Z" fill="#666666" />
+              <path d="M32 20L24 11V29L32 20Z" fill="#666666" />
+            </svg>
+          </button>
         </div>
-      </dl>
-      <div class="example__expenses">
-        <span>Затраты на питание:</span>
-        <span>15 000 руб.</span>
-      </div>
-      <div class="example__slider">
-        <picture>
-          <source type="image/png" media="(min-width: 768px)"
-            srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
-          <img class="example__slider-img-before" alt="Кот Борис - до" src="images/cat-before@1x.png"
-            srcset="images/cat-before@2x.png 2x" width="280" height="256">
-        </picture>
-        <picture>
-          <source type="image/png" media="(min-width: 768px)"
-            srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
-          <img class="example__slider-img-after" alt="Кот Борис - после" src="images/cat-after@1x.png"
-            srcset="images/cat-after@2x.png 2x" width="280" height="256">
-        </picture>
-        <button class="example__slider-thumb" type="button">
-          <span class="visually-hidden">Ручка слайдера</span>
-          <svg class="example__slider-thumb-svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-            viewBox="0 0 40 40" fill="none">
-            <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
-            <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
-            <path d="M16 11L8 20L16 29V11Z" fill="#666666" />
-            <path d="M32 20L24 11V29L32 20Z" fill="#666666" />
-          </svg>
-        </button>
       </div>
     </section>
     <!-- Contacts -->
@@ -179,17 +186,20 @@
       <h2 class="visually-hidden">Мы в соц. сетях</h2>
       <ul class="socials__list">
         <li class="socials__item">
-          <a class="socials__item-link socials__item-link-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+          <a class="socials__item-link socials__item-link-vk" href="https://vk.com/htmlacademy" target="_blank"
+            rel="noreferrer noopener">
             <span class="visually-hidden">VKontakte</span>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__item-link socials__item-link-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+          <a class="socials__item-link socials__item-link-youtube" href="https://www.youtube.com/user/htmlacademyru"
+            target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__item-link socials__item-link-telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+          <a class="socials__item-link socials__item-link-telegram" href="https://t.me/htmlacademy" target="_blank"
+            rel="noreferrer noopener">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>

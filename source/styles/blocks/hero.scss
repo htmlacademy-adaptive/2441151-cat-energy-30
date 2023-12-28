@@ -1,6 +1,23 @@
 .hero {
-  background-color: $bright;
   padding: 27px 20px 0;
+  min-width: 320px;
+  // min-height: 480px;
+  // background-color: $white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  // display: block;
+  width: 100%;
+  min-height: 302px;
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../../images/index-background@1x.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  z-index: -1;
 }
 
 .hero__container {
@@ -8,6 +25,7 @@
   flex-direction: column;
   // justify-content: center;
   align-items: center;
+
 }
 
 .hero__title {
@@ -35,5 +53,5 @@
 }
 
 .hero__button {
-  width: 280px;
+  width: 100%;
 }
