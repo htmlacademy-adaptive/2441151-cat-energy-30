@@ -1,6 +1,10 @@
 .example {
+  padding: 25px 20px 40px;
   background-color: $grey-bg-2;
 }
+
+// .example__container {}
+
 
 .example__title {
   color: $black;
@@ -9,6 +13,7 @@
   font-weight: 400;
   line-height: 40px;
   /* 111.111% */
+  margin-bottom: 40px;
 }
 
 .example__lead {
@@ -18,11 +23,28 @@
   font-weight: 400;
   line-height: 18px;
   /* 128.571% */
+  margin-bottom: 20px;
 }
 
-// .example__data-list {}
+.example__data-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 34px;
+}
 
-// .example__data-item {}
+.example__data-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 124px;
+  // min-height: 56px;
+  border: 1px solid $grey-separator-3;
+  border-radius: 4px;
+  padding: 15px;
+}
 
 .example__data-value {
   color: $black;
@@ -31,15 +53,32 @@
   font-weight: 400;
   line-height: 24px;
   /* 100% */
+  text-align: center;
+  position: relative;
+  // padding: 20px;
+  text-transform: uppercase;
 }
 
 .example__data-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: $grey-text;
   font-family: $primary-font;
   font-size: 12px;
   font-weight: 400;
   line-height: 100%;
   /* 12px */
+  text-align: center;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 85%;
+  left: 50%;
+  width: 87px;
+  min-height: 24px;
+  background-color: $grey-bg-2;
+  text-transform: lowercase;
+  padding: 0 8px;
 }
 
 .example__expenses {
@@ -50,6 +89,9 @@
   line-height: 20px;
   /* 142.857% */
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  // display: block;
 }
 
 // .example__slider {}

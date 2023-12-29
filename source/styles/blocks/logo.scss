@@ -1,6 +1,19 @@
-// .logo {}
+.logo {
+  display: flex;
+  align-items: center;
 
-// .logo__image-pic {}
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__image-pic {
+  margin-right: 56px;
+}
 
 // .logo__image-text {}
 

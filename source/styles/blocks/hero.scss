@@ -1,6 +1,24 @@
 .hero {
-  background-color: $bright;
   padding: 27px 20px 0;
+  min-width: 320px;
+  // min-height: 480px;
+  // background-color: $white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  // display: block;
+  width: 100%;
+  min-height: 302px;
+  background-image: linear-gradient(to bottom, $bright-transparrent, $bright-transparrent), url("../../images/index-background@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, center;
+  z-index: -1;
 }
 
 .hero__container {
@@ -35,5 +53,5 @@
 }
 
 .hero__button {
-  width: 280px;
+  width: 100%;
 }
