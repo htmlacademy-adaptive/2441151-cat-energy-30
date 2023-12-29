@@ -12,6 +12,14 @@
   padding: 10px;
   border: none;
   outline: none;
+
+  &:hover {
+    background-color: $accent-1;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 1)
+  }
 }
 
 // .button--wide {}

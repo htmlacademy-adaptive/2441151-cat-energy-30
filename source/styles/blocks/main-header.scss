@@ -1,5 +1,93 @@
-// .main-header {}
+.main-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 66px;
+  padding: 0 20px;
+  margin-bottom: -11px;
+}
 
-// .main-header__logo {}
 
-// .main-header__nav {}
+
+.logo__image-pic {
+  margin-right: 56px;
+}
+
+.main-header__logo-pic,
+.main-header__logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+// .main-header__logo-pic-img {}
+
+.main-header__logo-text {
+  margin: 0 auto;
+}
+
+// .main-header__logo-text-img {}
+
+.main-header__toggle {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-left: 14px;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  & span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+    margin: 6px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    &:last-child,
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  &--open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &--open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &--open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+
+
+.main-header__nav {
+  // box-sizing: border-box;
+  // width: 100%;
+  position: absolute;
+  top: 55px;
+  left: 0px;
+
+}

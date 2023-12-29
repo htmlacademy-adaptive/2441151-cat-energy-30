@@ -1,9 +1,43 @@
-// .main-footer__logo {}
-
-// .main-footer__socials {}
-
-// .main-footer__developer {}
-
 .main-footer {
   background-color: $grey-bg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  // width: 100%;
 }
+
+
+
+.main-footer__logo {
+  color: $black-lighter;
+
+  &:hover {
+    color: #3E3E3E;
+  }
+
+  &:active {
+    color: #6B6B6B;
+  }
+}
+
+
+.main-footer__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    // width: 100%;
+    height: 1px;
+    background-color: $grey-separator-2;
+    margin: 20px 0;
+    align-self: stretch;
+  }
+}
+
+// .main-footer__developer {}

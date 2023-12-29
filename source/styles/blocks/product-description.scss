@@ -33,64 +33,12 @@
   display: flex;
   align-items: center;
   /* 128.571% */
-
-  // &-nutrients {}
-
-  // &-preparation {}
-
-  // &-regimen {}
-
-  // &-results {}
 }
 
-.product-description__item::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  background-color: $bright;
-}
-
-
-.product-description__item-nutrients::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translate(-50%, -50%);
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 28px;
-  background-image: url("../../images/icons/stack.svg#icon_nutrients");
-}
-
-.product-description__item-preparation::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translate(-50%, -50%);
-  background-repeat: no-repeat;
-  width: 26px;
-  height: 29px;
-  background-image: url("../../images/icons/stack.svg#icon_preparation");
-}
-
-.product-description__item-regimen::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translate(-50%, -50%);
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 30px;
-  background-image: url("../../images/icons/stack.svg#icon_regimen");
-}
-
+.product-description__item::before,
+.product-description__item-nutrients::after,
+.product-description__item-preparation::after,
+.product-description__item-regimen::after,
 .product-description__item-results::after {
   content: "";
   position: absolute;
@@ -98,6 +46,33 @@
   left: 30px;
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
+}
+
+.product-description__item::before {
+  width: 60px;
+  height: 60px;
+  background-color: $bright;
+}
+
+.product-description__item-nutrients::after {
+  width: 25px;
+  height: 28px;
+  background-image: url("../../images/icons/stack.svg#icon_nutrients");
+}
+
+.product-description__item-preparation::after {
+  width: 26px;
+  height: 29px;
+  background-image: url("../../images/icons/stack.svg#icon_preparation");
+}
+
+.product-description__item-regimen::after {
+  width: 25px;
+  height: 30px;
+  background-image: url("../../images/icons/stack.svg#icon_regimen");
+}
+
+.product-description__item-results::after {
   width: 27px;
   height: 31px;
   background-image: url("../../images/icons/stack.svg#icon_results");
