@@ -1,9 +1,8 @@
-/* в этот файл добавляет скрипты*/
-document.addEventListener('DOMContentLoaded', function () {
-  var toggleButton = document.querySelector('.main-header__toggle');
-  var nav = document.querySelector('.main-nav');
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.querySelector('.main-header__toggle');
+  const nav = document.querySelector('.main-nav');
 
-  toggleButton.addEventListener('click', function () {
+  toggleButton.addEventListener('click', () => {
     if (nav.style.display === 'none' || nav.style.display === '') {
       nav.style.display = 'block';
       toggleButton.classList.add('main-header__toggle--open');

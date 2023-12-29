@@ -9,12 +9,12 @@
 .hero::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   // display: block;
   width: 100%;
   min-height: 302px;
-  background-image: linear-gradient(to bottom, $bright-transparrent, $bright-transparrent), url(../../images/index-background@1x.jpg);
+  background-image: linear-gradient(to bottom, $bright-transparrent, $bright-transparrent), url("../../images/index-background@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: center, center;
@@ -26,7 +26,6 @@
   flex-direction: column;
   // justify-content: center;
   align-items: center;
-
 }
 
 .hero__title {

@@ -7,20 +7,17 @@
   // width: 100%;
 }
 
-
-
 .main-footer__logo {
   color: $black-lighter;
 
   &:hover {
-    color: #3E3E3E;
+    color: #3e3e3e;
   }
 
   &:active {
-    color: #6B6B6B;
+    color: #6b6b6b;
   }
 }
-
 
 .main-footer__socials {
   display: flex;
