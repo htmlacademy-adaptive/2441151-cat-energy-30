@@ -43,7 +43,7 @@
   padding: 0;
   background-color: transparent;
   border: none;
-  margin-left: 14px;
+  margin-left: 9px;
 
   &:hover {
     opacity: 0.8;
@@ -78,6 +78,18 @@
 
   &--open span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header__toggle {
+    margin-left: 36px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-header__toggle {
+    margin-left: 46px;
   }
 }
 
