@@ -14,10 +14,31 @@
   // display: block;
   width: 100%;
   min-height: 302px;
-  background-image: linear-gradient(to bottom, $bright-transparrent, $bright-transparrent), url("../../images/index-background@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  background-position: center, center;
+  // background-color: #535258;
+  background-color: #484848;
+  background-image: url("../../images/index-background@1x.jpg");
+  background-repeat: no-repeat;
+  // background-size: cover, cover;
+  background-size: auto 124%;
+  background-position: center;
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  // display: block;
+  width: 100%;
+  min-height: 302px;
+  // background-color: #535258;
+  background-color: $bright-transparrent;
+  // background-image: linear-gradient(to bottom, $bright-transparrent, $bright-transparrent), url("../../images/index-background@1x.jpg");
+  // background-repeat: no-repeat, no-repeat;
+  // // background-size: cover, cover;
+  // background-size: auto 124%;
+  // background-position: center, center;
   z-index: -1;
 }
 

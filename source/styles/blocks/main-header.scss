@@ -83,7 +83,7 @@
 
   &--open span:nth-child(1) {
     top: 11px;
-    height: 1.5px;
+    // height: 1.5px;
     transform: rotate(45deg);
   }
 
@@ -93,7 +93,7 @@
 
   &--open span:nth-child(3) {
     top: 11px;
-    height: 1.5px;
+    // height: 1.5px;
     transform: rotate(-45deg);
   }
 }
@@ -111,8 +111,6 @@
 }
 
 .main-header__nav {
-  // box-sizing: border-box;
-  // width: 100%;
   position: absolute;
   top: 54px;
   left: 0;
