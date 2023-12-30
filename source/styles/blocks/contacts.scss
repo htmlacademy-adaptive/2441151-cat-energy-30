@@ -1,11 +1,22 @@
 .contacts {
   padding: 26px 20px;
+  display: flex;
+  flex-direction: column;
+  // max-width: 482px;
+  width: 100%;
+  max-width: 522px;
+  // align-items: stretch;
+  // flex: 1;
 }
 
 .contacts__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  // flex-grow: 1;
+  // width: max-content;
+  // flex: 1;
 }
 
 .contacts__title {
@@ -18,12 +29,14 @@
   /* 125% */
   text-transform: uppercase;
   width: 140px;
+  // flex: 1;
 }
 
 .contacts__address {
   display: flex;
   flex-direction: column;
   width: 140px;
+  // flex: 1;
 }
 
 // .contacts__street {}
