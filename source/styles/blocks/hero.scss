@@ -20,7 +20,7 @@
   background-image: url("../../images/index-background@1x.jpg");
   background-repeat: no-repeat;
   // background-size: cover, cover;
-  background-size: auto 124%;
+  background-size: auto 100%;
   background-position: center;
   z-index: -2;
 }
@@ -76,5 +76,5 @@
 
 .hero__button {
   width: 100%;
-  max-width: 400px;
+  max-width: 280px;
 }
