@@ -8,6 +8,7 @@
   width: 280px;
   min-height: 256px;
   overflow: hidden;
+  padding: 0 20px;
 }
 
 .slider__img-before,
@@ -39,6 +40,7 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  // z-index: 2;
 }
 
 .slider__thumb::before {
