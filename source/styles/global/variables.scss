@@ -1,7 +1,8 @@
-/* здесь используйте глобальные переменные */
+// Fonts:
 $primary-font: "Lato", "Arial", sans-serif;
 $secondary-font: "Oswald", "Arial", sans-serif;
 
+// Colors:
 $white: #ffffff;
 $black: #000000;
 $black-lighter: #111111;
@@ -30,5 +31,6 @@ $accent-2: #ff8282;
 
 $danger: $accent-2;
 
+// Viewports:
 $tablet-width: 768px;
 $desktop-width: 1440px;

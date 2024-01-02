@@ -1,5 +1,6 @@
 .product-description {
   padding: 0 20px 49px;
+  width: 100%;
 }
 
 // .product-description__container {}
@@ -19,6 +20,7 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
+  width: 100%;
 }
 
 .product-description__item {

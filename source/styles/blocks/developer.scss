@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 280px;
+  // width: 280px;
   color: $grey-text;
   font-family: $primary-font;
   font-size: 16px;
@@ -10,6 +10,7 @@
   line-height: 20px;
   /* 125% */
   text-decoration: none;
+  width: 100%;
 }
 
 .developer::after {

@@ -78,3 +78,13 @@
   width: 100%;
   // max-width: 280px;
 }
+
+@media (min-width: $tablet-width) {
+  .hero::before {
+    display: none;
+  }
+
+  .hero::after {
+    display: none;
+  }
+}
