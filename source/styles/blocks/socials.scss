@@ -40,3 +40,10 @@
 .socials__item-link:active {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .socials__list {
+    // width: fit-content;
+    gap: 24px;
+  }
+}

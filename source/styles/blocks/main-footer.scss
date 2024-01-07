@@ -38,3 +38,19 @@
 }
 
 .main-footer__developer {}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-footer__socials {
+    width: auto;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}

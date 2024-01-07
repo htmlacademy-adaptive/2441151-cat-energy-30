@@ -79,3 +79,19 @@
   height: 31px;
   background-image: url("../../images/icons/stack.svg#icon_results");
 }
+
+@media (min-width: $tablet-width) {
+  .product-description__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-description__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+}

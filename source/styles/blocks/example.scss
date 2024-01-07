@@ -95,3 +95,40 @@
 }
 
 // .example__slider {}
+
+@media (min-width: $tablet-width) {
+
+  .example {
+    padding: 45px 30px 101px;
+    background: linear-gradient($white 619px, $grey-bg-2 619px);
+  }
+
+  .example__data-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__data-details {
+    background-color: $white;
+  }
+
+  .example__expenses {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    // text-align: right;
+    align-items: end;
+    gap: 9px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__lead {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}

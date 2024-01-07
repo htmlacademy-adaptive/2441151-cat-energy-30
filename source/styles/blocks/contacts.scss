@@ -46,3 +46,9 @@
 // .contacts__map {}
 
 // .contacts__map-image {}
+
+@media (min-width: $tablet-width) {
+  .contacts__address {
+    gap: 20px;
+  }
+}

@@ -33,3 +33,14 @@
 // .developer__name {}
 
 // .developer__logo {}
+
+@media (min-width: $tablet-width) {
+  .developer {
+    // width: fit-content;
+    justify-content: right;
+    width: auto;
+  }
+  .developer::after {
+    margin-left: 23px;
+  }
+}
