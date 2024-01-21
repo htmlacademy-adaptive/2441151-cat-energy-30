@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Ваш текущий код для переключения навигации
+  // Текущий код для переключения навигации
   const toggleButton = document.querySelector('.main-header__toggle');
   const nav = document.querySelector('.main-nav');
 
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav.style.display = 'block';
       toggleButton.classList.add('main-header__toggle--open');
     } else {
-      nav.style.display = 'none';
+      nav.style.display = '';
       toggleButton.classList.remove('main-header__toggle--open');
     }
   });
