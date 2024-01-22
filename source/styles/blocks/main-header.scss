@@ -5,7 +5,7 @@
   justify-content: space-between;
   min-height: 66px;
   padding: 0 20px;
-  margin-bottom: -11px;
+  // margin-bottom: -11px;
 }
 
 .main-header__logo-pic,
@@ -85,7 +85,6 @@
     top: 11px;
     transform: rotate(-45deg);
   }
-
 }
 
 .main-header__nav {
@@ -119,7 +118,6 @@
     // top: 54px;
     // left: 0;
   }
-
 }
 
 // @media (min-width: $tablet-width) {

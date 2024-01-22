@@ -9,6 +9,10 @@
   // flex: 1;
 }
 
+.contacts--theme-grey {
+  background-color: $grey-bg;
+}
+
 .contacts__container {
   display: flex;
   justify-content: space-between;
