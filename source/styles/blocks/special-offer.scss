@@ -1,17 +1,18 @@
-.special-offer {
-  padding: 35px 20px;
+.special-offer__container {
+  padding-top: 35px;
+  padding-bottom: 35px;
   display: flex;
   justify-content: center;
   // width: 280px;
   // box-sizing: border-box;
 }
 
-.special-offer__container {
+.special-offer {
   // width: 280px;
   min-height: 290px;
   background-image: linear-gradient(to bottom, $bright-transparrent, $bright-transparrent), url("../../images/catalog-gift-background@1x.png");
   background-repeat: no-repeat, no-repeat;
-  // background-size: cover, cover;
+  background-size: cover, cover;
   background-position: center, center;
   padding: 58px 20px 43px;
   display: flex;
