@@ -1,4 +1,4 @@
-.special-offer__container {
+.special-offer {
   padding-top: 35px;
   padding-bottom: 35px;
   display: flex;
@@ -7,7 +7,7 @@
   // box-sizing: border-box;
 }
 
-.special-offer {
+.special-offer__container {
   // width: 280px;
   min-height: 290px;
   background-image: linear-gradient(to bottom, $bright-transparrent, $bright-transparrent), url("../../images/catalog-gift-background@1x.png");
