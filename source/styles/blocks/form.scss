@@ -13,13 +13,15 @@
 
 .form__section-title-wrapper {
   display: flex;
+  // position: relative;
   // align-items: flex-start;
 
   &::after {
     content: "";
-    left: 0;
-    right: 0;
-    top: 20px;
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // top: 0;
     z-index: -1;
     height: 2px;
     flex-grow: 1;
@@ -27,6 +29,20 @@
     transform: translateY(15px);
   }
 }
+
+.form__section-owner-contacts .form__section-title-wrapper::after {
+  transform: translateY(16px);
+}
+
+.form__section-comment .form__section-title-wrapper::after {
+  transform: translateY(15px);
+}
+
+.form__section-optional .form__section-title-wrapper::after {
+  transform: translateY(14.3px);
+}
+
+
 
 .form__section-title {
   font-family: $secondary-font;
@@ -37,12 +53,16 @@
 }
 
 .form__section-title--decorated {
-  padding-right: 20px;
+  padding-right: 20.5px;
   padding-left: 20px;
   background-color: $white;
   width: fit-content;
   // flex-shrink: 1;
   // overflow: hidden;
+}
+
+.form__section-owner-contacts .form__section-title--decorated {
+  padding-right: 25px;
 }
 
 @media (max-width: 410px) {
@@ -83,7 +103,9 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 23px;
+
 }
 
 .form__item-label {
@@ -156,7 +178,7 @@ input[type="number"] {
   border-bottom: 1px solid $grey-separator-3;
   margin-left: -20px;
   margin-right: -20px;
-  padding: 22px 20px 19px;
+  padding: 22px 20px 18px;
   display: flex;
   flex-direction: column;
   gap: 13px;
@@ -180,8 +202,8 @@ input[type="number"] {
 
 .form__item-radio {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 1px solid $grey-input;
   border-radius: 50%;
   cursor: pointer;
@@ -193,8 +215,8 @@ input[type="number"] {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 18px;
-  height: 18px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   background-color: $bright;
@@ -243,11 +265,11 @@ input[type="number"] {
 
 .form__comment-textarea-wrapper {
   padding: 0 20px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .form__comment-textarea {
-  padding: 15px 14px 14px;
+  padding: 13px 14px 14px;
   width: 100%;
   height: 150px;
 
@@ -264,7 +286,7 @@ input[type="number"] {
   flex-direction: column;
   gap: 12px;
   padding: 0 20px;
-  margin-bottom: 34px;
+  margin-bottom: 34.5px;
 }
 
 .form__item-input[type="checkbox"] {
@@ -284,7 +306,9 @@ input[type="number"] {
 }
 
 .form__item-checkbox {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   border: 1px solid $grey-input;
@@ -297,8 +321,8 @@ input[type="number"] {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 27px;
+  height: 27px;
   background-color: $bright;
   opacity: 0;
   // -webkit-mask-image: url("../../images/icons/stack.svg#tick");
