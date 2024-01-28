@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 45px;
   }
 }
 
@@ -26,6 +27,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    min-height: 372px;
     padding: 77px 316px 59.5px 52px;
   }
 }
@@ -80,8 +82,9 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
-    left: 545px;
+    left: auto;
     top: 191.5px;
+    right: -37px;
   }
 }
 
@@ -96,8 +99,9 @@
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
-    left: 545px;
+    left: auto;
     top: 178px;
+    right: 23px;
   }
 }
 
@@ -111,8 +115,9 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
-    left: 545px;
+    left: auto;
     top: 191px;
+    right: -105px;
   }
 }
 
