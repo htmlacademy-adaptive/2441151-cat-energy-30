@@ -30,7 +30,7 @@
       <img class="main-header__logo-text-img" width="101" height="18" src="images/header-logo-text.svg"
         alt="Кэт энерджи - На главную" aria-disabled="true">
     </a>
-    <nav class="main-header__nav main-nav">
+    <nav class="main-header__nav main-nav main-nav--form">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html" aria-current="page">Главная</a>
@@ -54,9 +54,9 @@
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
 
       <!-- Заглавная секция -->
-      <section class="form__section form__section-primary container">
+      <section class="form__section form__section-primary">
         <h1 class="form__section-title">Подбор программы</h1>
-        <p class="form__section-note">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
+        <p class="form__section-note">Заполните анкету, и мы подберем <br> программу&nbsp;питания для вашего кота</p>
         <!-- Набор параметров кота -->
         <div class="form__fieldset form__fieldset-cat-data">
           <h2 class="visually-hidden">Данные кота</h2>
@@ -178,7 +178,7 @@
         </div>
 
         <div class="form__submit-container">
-          <button class="form__submit-button button" type="submit">Отправить заявку</button>
+          <button class="form__submit-button button button--adaptive" type="submit">Отправить заявку</button>
           <span class="form__submit-note">* — Обязательные поля</span>
         </div>
 
@@ -188,9 +188,9 @@
     <!-- Contacts -->
     <section class="contacts contacts--theme-grey">
       <div class="contacts__container container">
-        <h2 class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
+        <h2 class="contacts__title">Приглашаем <br> к сотрудничеству <br> дилеров!</h2>
         <div class="contacts__address">
-          <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__street">ул. Большая <br> Конюшенная, д. 19/8</p>
           <p class="contacts__city">Санкт-Петербург</p>
         </div>
       </div>
@@ -207,7 +207,7 @@
     </section>
   </main>
   <!-- Footer starts -->
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <a class="main-footer__logo" href="index.html">
       <span class="visually-hidden">Логотип - Переход на главную</span>
       <svg class="main-footer__logo-image" width="128" height="24" viewBox="0 0 128 24"

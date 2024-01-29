@@ -5,7 +5,6 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  /* 125% */
   text-transform: uppercase;
   text-decoration: none;
   background-color: $bright;
@@ -34,4 +33,12 @@
 
 .button--wide {
   width: 100%;
+}
+
+.button--adaptive {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px;
+  }
 }

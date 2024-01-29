@@ -9,6 +9,13 @@
   align-items: center;
   gap: 13px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    gap: 14px;
+    align-items: baseline;
+  }
 }
 
 .phone-field__label {
@@ -18,8 +25,12 @@
 .phone-field__input {
   text-transform: inherit;
   width: 100%;
-  border: 1px solid $grey-text-input;
+  border: 1px solid $grey-input;
   padding: 13px 44px 12px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 44px 10px 20px;
+  }
 }
 
 .phone-field__icon {
@@ -27,6 +38,10 @@
   transform: translateY(-50%);
   top: 50%;
   right: 13px;
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+  }
 }
 
 .phone-field__input:hover {
