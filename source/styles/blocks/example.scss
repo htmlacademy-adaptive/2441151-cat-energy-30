@@ -198,6 +198,6 @@
 
   @media (min-width: $desktop-width) {
     justify-content: flex-end;
-    // align-items: flex-start;
+    align-self: start;
   }
 }

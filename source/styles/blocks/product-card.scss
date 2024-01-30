@@ -27,9 +27,12 @@
     background-image: none;
     border: 2px solid $grey-bg;
     margin-top: 82px;
-    padding-top: 50px;
+    padding-top: 48px;
     gap: 0;
-    min-height: 429px;
+    min-height: 428px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 10px;
   }
 }
 
@@ -58,6 +61,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
+    gap: 13px;
+    align-items: center;
   }
 }
 
@@ -68,6 +73,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 82px;
+    gap: 0;
   }
 
   &::before {
@@ -105,7 +111,7 @@
     line-height: 24px;
     text-align: center;
     align-self: center;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -123,6 +129,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -162,6 +169,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
+    text-align: center;
   }
 }
 

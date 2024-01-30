@@ -137,3 +137,10 @@
     }
   }
 }
+
+.main-nav--catalog {
+
+  & .main-nav__link--current::after {
+    bottom: -8.5px;
+  }
+}
