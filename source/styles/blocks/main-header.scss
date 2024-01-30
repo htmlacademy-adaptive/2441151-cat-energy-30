@@ -18,6 +18,15 @@
   }
 }
 
+.main-header--themed {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
 .main-header__logo-pic,
 .main-header__logo-text {
   display: flex;

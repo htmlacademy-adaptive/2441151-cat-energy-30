@@ -16,6 +16,16 @@
     background-image: none;
     background-color: transparent;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    background-image:
+      linear-gradient(to right, transparent 50%, $bright-transparrent 50%),
+      url("../../images/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto auto, contain;
+    background-position: center center, center left 50%;
+  }
 }
 
 // .hero::before {
@@ -56,6 +66,11 @@
     position: relative;
     min-height: 840px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 224px 80px 0;
+    min-height: 694px;
+  }
 }
 
 .hero__title {
@@ -93,6 +108,10 @@
     line-height: 20px;
     margin-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .hero__product-image {
@@ -107,8 +126,17 @@
     // right: auto;
     // margin: 0 auto;
     transform: translateX(-50%);
+  }
 
-    // display: none;
+  @media (min-width: $desktop-width) {
+    z-index: 0;
+    object-fit: contain;
+    bottom: auto;
+    left: 447px;
+    top: 143px;
+    // right: auto;
+    // margin: 0 auto;
+    transform: translateY(0%);
   }
 }
 

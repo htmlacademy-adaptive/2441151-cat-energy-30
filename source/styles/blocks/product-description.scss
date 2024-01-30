@@ -45,7 +45,6 @@
   }
 }
 
-
 .product-description__item {
   color: $grey-text;
   font-family: $primary-font;
@@ -112,23 +111,28 @@
 }
 
 .product-description__item::after {
-  content: counter(item-counter);
-  position: absolute;
 
-  // text-align: center;
-  font-family: $secondary-font;
-  font-size: 280px;
-  font-weight: 400;
-  line-height: 280px;
-  color: $grey-bg;
-  z-index: -1;
-  top: 0;
-  left: 113px;
+  @media (min-width: $tablet-width) {
+    content: counter(item-counter);
+    position: absolute;
+
+    // text-align: center;
+    font-family: $secondary-font;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    color: $grey-bg;
+    z-index: -1;
+    top: 0;
+    left: 113px;
+  }
 }
+
 //1
 .product-description__item-nutrients::after {
   left: 118px;
 }
+
 //2
 .product-description__item-preparation::after {
   left: 111px;
