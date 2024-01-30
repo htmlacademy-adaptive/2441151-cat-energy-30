@@ -42,6 +42,10 @@
   @media (min-width: $tablet-width) {
     right: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
+  }
 }
 
 .email-field__input:hover {

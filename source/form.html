@@ -57,46 +57,48 @@
       <section class="form__section form__section-primary">
         <h1 class="form__section-title">Подбор программы</h1>
         <p class="form__section-note">Заполните анкету, и мы подберем <br> программу&nbsp;питания для вашего кота</p>
-        <!-- Набор параметров кота -->
-        <div class="form__fieldset form__fieldset-cat-data">
-          <h2 class="visually-hidden">Данные кота</h2>
-          <label class="form__item-label">Имя:*
-            <input class="form__item-input" type="text" name="name" placeholder="Барсик"
-              onkeydown="return /[a-zA-Zа-яА-ЯёЁ]/i.test(event.key)" required>
-          </label>
+        <div class="form__fieldset-primary-wrapper">
+          <!-- Набор параметров кота -->
+          <div class="form__fieldset form__fieldset-cat-data">
+            <h2 class="visually-hidden">Данные кота</h2>
+            <label class="form__item-label">Имя:*
+              <input class="form__item-input" type="text" name="name" placeholder="Барсик"
+                onkeydown="return /[a-zA-Zа-яА-ЯёЁ]/i.test(event.key)" required>
+            </label>
 
-          <label class="form__item-label">Вес (кг):*
-            <input class="form__item-input" type="number" name="weight" placeholder="7" step="0.1" min="0" required>
-          </label>
+            <label class="form__item-label">Вес (кг):*
+              <input class="form__item-input" type="number" name="weight" placeholder="7" step="0.1" min="0" required>
+            </label>
 
-          <label class="form__item-label">Возраст (лет):
-            <input class="form__item-input" type="number" name="age" placeholder="7">
-          </label>
+            <label class="form__item-label">Возраст (лет):
+              <input class="form__item-input" type="number" name="age" placeholder="7">
+            </label>
 
-        </div>
-        <!-- Выбор программы -->
-        <h2 class="visually-hidden">Выбор программы</h2>
-        <div class="form__fieldset form__fieldset-program-select">
+          </div>
+          <!-- Выбор программы -->
+          <h2 class="visually-hidden">Выбор программы</h2>
+          <div class="form__fieldset form__fieldset-program-select">
 
-          <input class="form__item-input" type="radio" name="selected-program" id="weight-loss" value="weight-loss"
-            checked>
-          <label class="form__item-label" for="weight-loss">
-            <span class="form__item-radio"></span>
-            Похудение
-          </label>
+            <input class="form__item-input" type="radio" name="selected-program" id="weight-loss" value="weight-loss"
+              checked>
+            <label class="form__item-label" for="weight-loss">
+              <span class="form__item-radio"></span>
+              Похудение
+            </label>
 
-          <input class="form__item-input" type="radio" name="selected-program" id="weight-gain" value="weight-gain">
-          <label class="form__item-label" for="weight-gain">
-            <span class="form__item-radio"></span>
-            Набор массы
-          </label>
+            <input class="form__item-input" type="radio" name="selected-program" id="weight-gain" value="weight-gain">
+            <label class="form__item-label" for="weight-gain">
+              <span class="form__item-radio"></span>
+              Набор массы
+            </label>
 
-          <input class="form__item-input" type="radio" name="selected-program" id="need-advice" value="need-advice">
-          <label class="form__item-label" for="need-advice">
-            <span class="form__item-radio"></span>
-            Не знаю (Нужен ваш совет)
-          </label>
+            <input class="form__item-input" type="radio" name="selected-program" id="need-advice" value="need-advice">
+            <label class="form__item-label" for="need-advice">
+              <span class="form__item-radio"></span>
+              Не знаю (Нужен ваш совет)
+            </label>
 
+          </div>
         </div>
       </section>
       <!-- Контактные данные (владельца кота) -->
@@ -187,7 +189,7 @@
     </form>
     <!-- Contacts -->
     <section class="contacts contacts--theme-grey">
-      <div class="contacts__container container">
+      <div class="contacts__container">
         <h2 class="contacts__title">Приглашаем <br> к сотрудничеству <br> дилеров!</h2>
         <div class="contacts__address">
           <p class="contacts__street">ул. Большая <br> Конюшенная, д. 19/8</p>

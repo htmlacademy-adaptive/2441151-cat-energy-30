@@ -4,12 +4,18 @@
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     padding-top: 56.5px;
+    padding-bottom: 56px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 68px;
+    padding-bottom: 67px;
   }
 }
 

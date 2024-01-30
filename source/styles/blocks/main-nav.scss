@@ -37,6 +37,11 @@
     line-height: 24px;
     margin-right: 4px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .main-nav__item {
@@ -95,6 +100,10 @@
 
   & .main-nav__list {
     margin-right: 0px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 1px;
+    }
   }
 
   & .main-nav__link--current::after {
