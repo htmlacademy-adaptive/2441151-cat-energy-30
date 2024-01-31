@@ -8,14 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // width: 132px;
   width: 100%;
-  // max-width: 640px;
   padding: 0 74px;
-
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .socials__item-link {
@@ -41,8 +35,6 @@
   mask-image: url("../../images/icons/stack.svg#icon_telegram");
 }
 
-// .socials__item-svg {}
-
 .socials__item-link:hover {
   background-color: $bright;
 }
@@ -53,7 +45,6 @@
 
 @media (min-width: $tablet-width) {
   .socials__list {
-    // width: fit-content;
     gap: 24px;
   }
 }

@@ -1,16 +1,15 @@
 .page {
+  min-height: 100%;
   min-width: 320px;
-  // width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  // background-color: $grey-bg-2;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page__body {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
 
   @media (min-width: $desktop-width) {
     position: relative;

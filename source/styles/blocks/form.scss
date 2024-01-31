@@ -79,8 +79,18 @@
     }
   }
 }
-//Декоративные полосы
+
 .form__section-owner-contacts .form__section-title-wrapper {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+
   &::after {
     transform: translateY(16px);
 
@@ -96,8 +106,17 @@
   }
 }
 
-//Декоративные полосы
 .form__section-comment .form__section-title-wrapper {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 78px;
+  }
+
   &::after {
     transform: translateY(15px);
 
@@ -113,8 +132,13 @@
   }
 }
 
-//Декоративные полосы
 .form__section-optional .form__section-title-wrapper {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
   &::after {
     transform: translateY(14.3px);
 
@@ -171,38 +195,6 @@
 @media (max-width: 410px) {
   .form__section-title--decorated {
     width: min-content;
-  }
-}
-
-.form__section-owner-contacts .form__section-title-wrapper {
-  margin-bottom: 35px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
-  }
-}
-
-.form__section-comment .form__section-title-wrapper {
-  margin-bottom: 38px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 87px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 78px;
-  }
-}
-
-.form__section-optional .form__section-title-wrapper {
-  margin-bottom: 34px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
   }
 }
 
@@ -285,6 +277,7 @@
   width: 100%;
   border: 1px solid $grey-text-input;
   padding: 13px 14px 12px;
+
   @media (min-width: $tablet-width) {
     padding: 10px 20px;
   }
@@ -437,12 +430,12 @@ input[type="number"] {
   padding: 26px 0 24px;
 
   @media (min-width: $tablet-width) {
-  padding: 65px 0;
+    padding: 65px 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 70px 0;
-    }
+  }
 }
 
 .form__fieldset-owner-contacts {
@@ -562,11 +555,11 @@ input[type="number"] {
     margin-bottom: 60px;
   }
 
-    & .form__item-label {
-      @media (min-width: $tablet-width) {
-        gap: 20px;
-      }
+  & .form__item-label {
+    @media (min-width: $tablet-width) {
+      gap: 20px;
     }
+  }
 }
 
 .form__item-input[type="checkbox"] {
