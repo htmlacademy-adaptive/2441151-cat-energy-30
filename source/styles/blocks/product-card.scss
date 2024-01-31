@@ -156,6 +156,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 26px;
+    padding: 0;
   }
 }
 
@@ -210,6 +211,10 @@
     line-height: 18px;
     text-align: center;
     padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
