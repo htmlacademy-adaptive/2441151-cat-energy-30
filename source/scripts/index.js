@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Удаление класса, указывающего на отсутствие JavaScript
+  const nav = document.querySelector('.main-header__nav');
+  nav.classList.remove('main-header__nav--nojs');
   // Текущий код для переключения навигации
   const toggleButton = document.querySelector('.main-header__toggle');
-  const nav = document.querySelector('.main-nav');
 
   toggleButton.addEventListener('click', () => {
     if (nav.style.display === 'none' || nav.style.display === '') {
