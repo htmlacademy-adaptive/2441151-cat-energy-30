@@ -4,14 +4,69 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  /* 112.5% */
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    gap: 14px;
+    align-items: baseline;
+  }
 }
 
-// .email-field__label {}
+.email-field__label {
+  text-wrap: nowrap;
+}
 
 .email-field__input {
   text-transform: inherit;
+  width: 100%;
+  border: 1px solid $grey-input;
+  padding: 13px 44px 12px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 44px 10px 20px;
+  }
 }
 
-// .email-field__icon {}
+.email-field__icon {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 12px;
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
+  }
+}
+
+.email-field__input:hover {
+  border-color: $grey-input;
+}
+
+.email-field__input:focus {
+  box-shadow: inset 0 0 0 1px $grey-text;
+  border-color: $grey-text;
+  outline: none;
+}
+
+.email-field__input:focus + .email-field__icon path {
+  stroke: $bright;
+}
+
+.email-field__input:invalid:not(:placeholder-shown) {
+  border-color: $danger;
+  box-shadow: inset 0 0 0 1px $danger;
+}
+
+.email-field__input:invalid:not(:placeholder-shown) + .email-field__icon path {
+  stroke: $danger;
+}

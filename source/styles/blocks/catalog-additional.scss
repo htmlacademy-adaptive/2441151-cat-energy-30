@@ -1,6 +1,53 @@
-// .catalog-additional {}
+.catalog-additional {
+  width: 100%;
 
-// .catalog-additional__container {}
+  @media (min-width: $desktop-width) {
+    padding-bottom: 87px;
+  }
+}
+
+.catalog-additional__title-wrapper {
+  display: flex;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 79px;
+  }
+
+  &::after {
+    content: "";
+    z-index: -1;
+    height: 2px;
+    flex-grow: 1;
+    background-color: $bright;
+    transform: translateY(14px);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      z-index: -1;
+      height: 2px;
+      background-color: $bright;
+      transform: translateY(22px);
+      width: 30px;
+    }
+
+    &::after {
+      transform: translateY(22px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 70px;
+    }
+  }
+}
 
 .catalog-additional__title {
   color: $black;
@@ -8,12 +55,69 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  /* 100% */
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-// .catalog-additional__products-list {}
+.catalog-additional__title--decorated {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $white;
+  width: fit-content;
 
-// .catalog-additional__product {}
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.catalog-additional__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.catalog-additional__products-list {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.catalog-additional__product-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 13px;
+  border-top: 1px solid $grey-input;
+  padding-top: 12.6px;
+  padding-bottom: 18px;
+
+  &:last-child {
+    border-bottom: 1px solid $grey-input;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $grey-input;
+    border-right: 1px solid $grey-input;
+    padding: 26px 37px 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+    padding: 15px 0 16px;
+    grid-template-columns: 325px 326px 244px;
+  }
+}
 
 .catalog-additional__product-title {
   color: $grey-title;
@@ -21,12 +125,32 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  /* 100% */
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
 }
 
 .catalog-additional__product-properties-container {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .catalog-additional__product-quantity {
@@ -35,7 +159,16 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  /* 100% */
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: middle;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 13px;
+  }
 }
 
 .catalog-additional__product-price {
@@ -44,9 +177,26 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  /* 100% */
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 93px;
+    text-align: right;
+    padding-right: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-top: 13px;
+    padding-left: 10px;
+  }
 }
 
-// .catalog-additional__product-order-button {}
+.catalog-additional__product-order-button {
+  grid-column: 1/-1;
 
-// .catalog-additional__special-offer {}
+  @media (min-width: $desktop-width) {
+    grid-column: 3/-1;
+  }
+}

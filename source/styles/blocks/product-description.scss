@@ -1,24 +1,56 @@
 .product-description {
-  padding: 0 20px 49px;
-}
+  padding-bottom: 53px;
+  width: 100%;
 
-// .product-description__container {}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
 
 .product-description__title {
   color: $black;
-  // text-align: center;
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  /* 111.111% */
-  margin-bottom: 40px;
+  margin-bottom: 42px;
+  padding-left: 1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32.5px;
+  }
 }
 
 .product-description__list {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  width: 100%;
+  counter-reset: item-counter;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 94px 60px;
+  }
+
+  @media (min-width: 1240px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .product-description__item {
@@ -32,48 +64,81 @@
   min-height: 54px;
   display: flex;
   align-items: center;
-  /* 128.571% */
-}
+  counter-increment: item-counter;
 
-.product-description__item::before,
-.product-description__item-nutrients::after,
-.product-description__item-preparation::after,
-.product-description__item-regimen::after,
-.product-description__item-results::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translate(-50%, -50%);
-  background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    max-width: 250px;
+    padding-top: 151px;
+  }
 }
 
 .product-description__item::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
   width: 60px;
   height: 60px;
   background-color: $bright;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 80px;
+    left: 40px;
+  }
 }
 
-.product-description__item-nutrients::after {
-  width: 25px;
-  height: 28px;
+.product-description__item-nutrients::before {
   background-image: url("../../images/icons/stack.svg#icon_nutrients");
+  background-size: 25px 28px;
+  background-position: center;
 }
 
-.product-description__item-preparation::after {
-  width: 26px;
-  height: 29px;
+.product-description__item-preparation::before {
   background-image: url("../../images/icons/stack.svg#icon_preparation");
+  background-size: 26px 29px;
+  background-position: center;
 }
 
-.product-description__item-regimen::after {
-  width: 25px;
-  height: 30px;
+.product-description__item-regimen::before {
   background-image: url("../../images/icons/stack.svg#icon_regimen");
+  background-size: 25px 30px;
+  background-position: center;
 }
 
-.product-description__item-results::after {
-  width: 27px;
-  height: 31px;
+.product-description__item-results::before {
   background-image: url("../../images/icons/stack.svg#icon_results");
+  background-size: 27px 31px;
+  background-position: center;
+}
+
+.product-description__item::after {
+  @media (min-width: $tablet-width) {
+    content: counter(item-counter);
+    position: absolute;
+    font-family: $secondary-font;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    color: $grey-bg;
+    z-index: -1;
+    top: 0;
+    left: 113px;
+  }
+}
+
+//1
+.product-description__item-nutrients::after {
+  left: 118px;
+}
+
+//2
+.product-description__item-preparation::after {
+  left: 111px;
 }

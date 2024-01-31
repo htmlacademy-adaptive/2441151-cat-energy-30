@@ -4,11 +4,11 @@
 @import "./global/fonts.scss";
 @import "./global/global.scss";
 @import "./global/visually_hidden.scss";
+@import "./global/container.scss";
 
 /* BLOCKS */
 @import "./blocks/page.scss";
 @import "./blocks/button.scss";
-@import "./blocks/button-toggle.scss";
 @import "./blocks/catalog-additional.scss";
 @import "./blocks/catalog-main.scss";
 @import "./blocks/contacts.scss";
@@ -26,5 +26,6 @@
 @import "./blocks/product-card.scss";
 @import "./blocks/product-description.scss";
 @import "./blocks/product-lines.scss";
+@import "./blocks/slider.scss";
 @import "./blocks/socials.scss";
 @import "./blocks/special-offer.scss";

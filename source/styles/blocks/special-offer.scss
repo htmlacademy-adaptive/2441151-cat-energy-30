@@ -1,18 +1,54 @@
 .special-offer {
-  padding: 35px 20px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  // width: 280px;
+  // box-sizing: border-box;
+  @media (min-width: $tablet-width) {
+    padding-top: 69px;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .special-offer__container {
+  // width: 280px;
   min-height: 290px;
-  background-image: linear-gradient(to bottom, $bright-transparrent, $bright-transparrent), url("../../images/catalog-gift-background@1x.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  background-position: center, center;
+  background-image: url("../../images/catalog-gift-background@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 58px 20px 43px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  background-color: $white;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/catalog-gift-background-tablet@1x.png");
+    min-height: 200px;
+    width: 707px;
+    flex-direction: row;
+    padding: 18px 92px 15px 77px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/catalog-gift-background-desktop@1x.png");
+    min-height: 288px;
+    min-width: auto;
+    width: 245px;
+    flex-direction: column;
+    padding: 61px 20px 43px;
+    justify-content: space-between;
+  }
 }
 
 .special-offer__text {
@@ -23,12 +59,32 @@
   line-height: 20px;
   /* 125% */
   text-align: center;
-  padding: 0 40px;
+  padding-left: 30px;
+  padding-right: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
 }
 
 .special-offer__icon {
   background-image: url("../../images/icons/stack.svg#icon_gift");
   background-repeat: no-repeat;
-  width: 78px;
-  height: 80px;
+  width: 81px;
+  height: 81px;
+  margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 80px;
+    height: 82.5px;
+    transform: translateY(-4px);
+  }
 }

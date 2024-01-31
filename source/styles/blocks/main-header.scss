@@ -3,13 +3,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 66px;
+  min-height: 65px;
   padding: 0 20px;
-  margin-bottom: -11px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    padding: 0 30px;
+    margin-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin-top: 52px;
+  }
 }
 
-.logo__image-pic {
-  margin-right: 56px;
+.main-header--themed {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .main-header__logo-pic,
@@ -27,13 +42,26 @@
   }
 }
 
-// .main-header__logo-pic-img {}
+.main-header__logo-pic-img {
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+}
 
 .main-header__logo-text {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
-// .main-header__logo-text-img {}
+.main-header__logo-text-img {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
 
 .main-header__toggle {
   width: 24px;
@@ -46,6 +74,8 @@
   background-color: transparent;
   border: none;
   margin-left: 9px;
+  margin-right: 1px;
+  margin-bottom: 1px;
 
   &:hover {
     opacity: 0.8;
@@ -61,20 +91,15 @@
     width: 24px;
     background-color: $black;
     position: absolute;
-    // transition: transform 0.3s ease, opacity 0.3s ease;
     transition: all 0.3s ease;
-
-    // &:nth-child(2) {
-    //   margin: 6px 0;
-    // }
   }
 
   & span:nth-child(1) {
-    top: 4px;
+    top: 2px;
   }
 
   & span:nth-child(2) {
-    top: 11px;
+    top: 10px;
   }
 
   & span:nth-child(3) {
@@ -83,7 +108,6 @@
 
   &--open span:nth-child(1) {
     top: 11px;
-    height: 1.5px;
     transform: rotate(45deg);
   }
 
@@ -93,27 +117,40 @@
 
   &--open span:nth-child(3) {
     top: 11px;
-    height: 1.5px;
     transform: rotate(-45deg);
   }
-}
 
-@media (min-width: 768px) {
-  .main-header__toggle {
-    margin-left: 36px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .main-header__toggle {
-    margin-left: 46px;
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
 .main-header__nav {
-  // box-sizing: border-box;
-  // width: 100%;
   position: absolute;
   top: 54px;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    margin-left: auto;
+  }
 }
+
+// @media (min-width: $tablet-width) {
+//   .main-nav__wrapper {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 640px;
+//     margin: 0 auto;
+//   }
+
+//   .main-nav__toggle {
+//     display: none;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .main-nav__wrapper {
+//     width: 960px;
+//   }
+// }
