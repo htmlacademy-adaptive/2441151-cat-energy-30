@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Текущий код для переключения навигации
+
+  const nav = document.querySelector('.main-header__nav');
+  nav.classList.remove('main-header__nav--nojs');
+
   const toggleButton = document.querySelector('.main-header__toggle');
-  const nav = document.querySelector('.main-nav');
 
   toggleButton.addEventListener('click', () => {
     if (nav.style.display === 'none' || nav.style.display === '') {
@@ -13,13 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Добавление функциональности слайдера
   const container = document.querySelector('.slider__container');
   const thumb = document.querySelector('.slider__thumb');
   const imageBefore = document.querySelector('.slider__img-before');
   const imageAfter = document.querySelector('.slider__img-after');
 
-  // Функция для обработки перемещения ручки
   const moveThumb = (clientX) => {
     const containerRect = container.getBoundingClientRect();
     let newX = clientX - containerRect.left;
@@ -45,14 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
     window.removeEventListener('touchend', onThumbReleased);
   };
 
-  // Обработчики для мыши
   thumb.addEventListener('mousedown', (eMouseDown) => {
     eMouseDown.preventDefault();
     window.addEventListener('mousemove', onMouseMove);
     window.addEventListener('mouseup', onThumbReleased);
   });
 
-  // Обработчики для сенсорных событий
   thumb.addEventListener('touchstart', (eTouchStart) => {
     eTouchStart.preventDefault();
     window.addEventListener('touchmove', onTouchMove);
