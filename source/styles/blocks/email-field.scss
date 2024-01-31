@@ -53,8 +53,8 @@
 }
 
 .email-field__input:focus {
-  box-shadow: inset 0 0 0 1px $grey-text;
-  border-color: $grey-text;
+  box-shadow: inset 0 0 0 1px $focus-outline;
+  border-color: $focus-outline;
   outline: none;
 }
 

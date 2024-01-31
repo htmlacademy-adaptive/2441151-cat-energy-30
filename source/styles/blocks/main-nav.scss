@@ -76,6 +76,14 @@
 .main-nav__link {
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    color: rgba($color: $black, $alpha: 0.6);
+  }
+
+  &:active {
+    color: rgba($color: $black, $alpha: 0.3);
+  }
 }
 
 .main-nav__link--current {
@@ -124,6 +132,14 @@
   & .main-nav__link {
     @media (min-width: $desktop-width) {
       color: $white;
+
+      &:hover {
+        color: rgba($color: $white, $alpha: 0.6);
+      }
+
+      &:active {
+        color: rgba($color: $white, $alpha: 0.3);
+      }
     }
   }
 
