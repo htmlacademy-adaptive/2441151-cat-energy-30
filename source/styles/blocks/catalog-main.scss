@@ -31,6 +31,13 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
+    margin-bottom: 84px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .catalog-main__products-list {
@@ -47,8 +54,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 63px 80px;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 76px;
   }
 }
 
