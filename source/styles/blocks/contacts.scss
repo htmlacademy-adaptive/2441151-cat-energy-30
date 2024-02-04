@@ -100,18 +100,29 @@
 .contacts__map {
   width: 100%;
   min-height: 362px;
-  background-image: url("../../images/map-img@2x.png");
+  background-image: image-set(
+    url("../../images/map-img@2x.webp") type("image/webp") 2x,
+    url("../../images/map-img@1x.webp") type("image/webp"),
+    url("../../images/map-img@2x.png") 2x,
+    url("../../images/map-img@1x.png"));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
-    background-image: url("../../images/map-img-tablet@2x.png");
+    background-image: image-set(
+      url("../../images/map-img-tablet@2x.webp") type("image/webp") 2x,
+      url("../../images/map-img-tablet@1x.webp") type("image/webp"),
+      url("../../images/map-img-tablet@2x.png") 2x,
+      url("../../images/map-img-tablet@1x.png"));
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 400px;
-    background-image: url("../../images/map-img-desktop@2x.png");
+    background-image: image-set(
+      url("../../images/map-img-desktop@2x.webp") type("image/webp") 2x,
+      url("../../images/map-img-desktop@1x.webp") type("image/webp"),
+      url("../../images/map-img-desktop@2x.png") 2x,
+      url("../../images/map-img-desktop@1x.png"));
   }
 }
