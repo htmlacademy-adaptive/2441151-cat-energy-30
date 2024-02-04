@@ -1,9 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  const nav = document.querySelector('.main-header__nav');
-  nav.classList.remove('main-header__nav--nojs');
+  const elements = document.querySelectorAll('.no-js');
+
+  elements.forEach((element) => {
+    element.classList.remove('no-js');
+    element.classList.add('js');
+  });
 
   const toggleButton = document.querySelector('.main-header__toggle');
+  const nav = document.querySelector('.main-nav');
 
   toggleButton.addEventListener('click', () => {
     if (nav.style.display === 'none' || nav.style.display === '') {

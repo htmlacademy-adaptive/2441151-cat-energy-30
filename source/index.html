@@ -10,6 +10,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -30,12 +32,12 @@
       <img class="main-header__logo-text-img" width="101" height="18" src="images/header-logo-text.svg"
         alt="Кэт энерджи - На главную" aria-disabled="true">
     </a>
-    <button class="main-header__toggle" type="button" aria-label="Открыть меню">
+    <button class="main-header__toggle no-js" type="button" aria-label="Открыть меню">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </button>
-    <nav class="main-header__nav main-header__nav--nojs main-nav main-nav--index">
+    <nav class="main-header__nav main-nav main-nav--index no-js">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">Главная</a>

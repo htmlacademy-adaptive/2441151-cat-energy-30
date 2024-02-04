@@ -100,7 +100,8 @@
 .contacts__map {
   width: 100%;
   min-height: 362px;
-  background-image: image-set(
+  background-image:
+    image-set(
     url("../../images/map-img@2x.webp") type("image/webp") 2x,
     url("../../images/map-img@1x.webp") type("image/webp"),
     url("../../images/map-img@2x.png") 2x,
@@ -111,7 +112,8 @@
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
-    background-image: image-set(
+    background-image:
+      image-set(
       url("../../images/map-img-tablet@2x.webp") type("image/webp") 2x,
       url("../../images/map-img-tablet@1x.webp") type("image/webp"),
       url("../../images/map-img-tablet@2x.png") 2x,
@@ -119,7 +121,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: image-set(
+    background-image:
+      image-set(
       url("../../images/map-img-desktop@2x.webp") type("image/webp") 2x,
       url("../../images/map-img-desktop@1x.webp") type("image/webp"),
       url("../../images/map-img-desktop@2x.png") 2x,

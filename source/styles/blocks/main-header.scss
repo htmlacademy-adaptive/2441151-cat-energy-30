@@ -127,6 +127,14 @@
   }
 }
 
+.main-header__toggle.no-js {
+  pointer-events: none;
+
+  & span {
+    background-color: $white;
+  }
+}
+
 .main-header__nav {
   position: absolute;
   top: 65px;
@@ -140,7 +148,7 @@
   }
 }
 
-.main-header__nav--nojs {
+.main-header__nav.no-js {
   @media (max-width: $tablet-width) {
     position: static;
     margin-left: auto;
